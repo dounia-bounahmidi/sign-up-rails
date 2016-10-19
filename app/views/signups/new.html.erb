@@ -1,0 +1,12 @@
+<div class="contact">
+   <img src="https://s3.amazonaws.com/codecademy-content/projects/z2d/stories/menu-black.svg" class="menu">
+  <div class="container">
+    <h1>Get the latest updates from Stories</h1>
+    
+      <%= form_for(@signup) do |f| %>
+      <%= f.text_area :firstname, :class => 'data', :placeholder => "First name", required: true %>
+       <%= f.text_area :firstname, :class => 'data', :placeholder => "Email", required: true %>
+     <%= f.submit "Join", class:'submit'%>
+    <% end %>
+  </div>
+</div>

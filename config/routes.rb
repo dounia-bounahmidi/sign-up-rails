@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  
   root 'pages#home'
   
   get 'home' => 'pages#home'
   get 'about' => 'pages#about'
+  resources :signup, except: [:delete, :update, :show, :index]
+  get 'signups/new' => "signups#new" 
+  get '/thanks' => 'pages#thanks'
+  post 'signups' => 'signups#create'
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

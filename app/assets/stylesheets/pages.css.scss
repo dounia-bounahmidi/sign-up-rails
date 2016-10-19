@@ -54,7 +54,7 @@ a:hover {
 }
 
 .main {
-  height: 600px; 
+  height: 700px; 
   background: url("https://images.unsplash.com/photo-1474925558543-e7a5f06e733e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f5e597cd88940fcf9b13c2f414598b3e") no-repeat center center; 
   background-size: cover; 
   text-align: center; 
@@ -159,7 +159,7 @@ button:hover {
 /* About Page */ 
 
 .jumbotron {
-  height: 600px; 
+  height: 700px; 
   background: url("https://hd.unsplash.com/photo-1465311440653-ba9b1d9b0f5b") no-repeat center center; 
   background-size: cover; 
   text-align: center; 
@@ -204,4 +204,30 @@ button:hover {
   color: #FFF; 
   padding-bottom: 20px; 
 }
+
+/* Thanks page */ 
+
+.thanks {
+  height: 700px; 
+  background: url("https://hd.unsplash.com/photo-1469521669194-babb45599def") no-repeat center center; 
+  background-size: cover; 
+  text-align: center; 
+  margin: 0; 
+}
+
+.thanks img {
+  width: 20px; 
+  height: 20px; 
+  margin: 20px; 
+  float: left; 
+}
+
+.thanks h1 {
+  font-size: 40px; 
+  color: #000; 
+  padding-top: 250px; 
+  font-weight: 900; 
+}
+
+
 
