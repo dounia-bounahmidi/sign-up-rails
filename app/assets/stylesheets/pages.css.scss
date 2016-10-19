@@ -12,6 +12,16 @@ html, body {
   max-width: 940px; 
 }
 
+a {
+  text-decoration: none; 
+  color: #FFF; 
+}
+
+a:hover {
+  text-decoration: none; 
+  color: #88BBBB; 
+}
+
 /* Home Page */ 
 
 .side-menu {
@@ -44,7 +54,7 @@ html, body {
 }
 
 .main {
-  height: 500px; 
+  height: 600px; 
   background: url("https://images.unsplash.com/photo-1474925558543-e7a5f06e733e?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=f5e597cd88940fcf9b13c2f414598b3e") no-repeat center center; 
   background-size: cover; 
   text-align: center; 
@@ -61,9 +71,9 @@ html, body {
 }
 
 .main h1 {
-  font-size: 40px; 
+  font-size: 60px; 
   font-weight: 900; 
-  padding-top: 200px; 
+  padding-top: 220px; 
 }
 
 button {
@@ -120,13 +130,17 @@ button:hover {
   padding: 20px; 
 }
 
-#discover {
+.blue {
   background: #88BBBB; 
   opacity: 0.8; 
 }
 
-#discover:hover {
-  opacity: 1; 
+.blue:hover {
+  opacity: 1;  
+}
+
+.blue a:hover {
+  color: #000; 
 }
 
 .footer {
@@ -141,3 +155,53 @@ button:hover {
   color: #FFF; 
   font-size: 10px; 
 }
+
+/* About Page */ 
+
+.jumbotron {
+  height: 600px; 
+  background: url("https://hd.unsplash.com/photo-1465311440653-ba9b1d9b0f5b") no-repeat center center; 
+  background-size: cover; 
+  text-align: center; 
+  margin: 0; 
+}
+
+.jumbotron img {
+  width: 20px; 
+  height: 20px; 
+  cursor: pointer; 
+  float: left; 
+  position: relative; 
+  z-index: 1; 
+  margin: -15px 10px; 
+}
+
+.jumbotron h1 {
+  font-size: 60px; 
+  font-weight: 900; 
+  padding-top: 200px; 
+}
+
+.about-supporting {
+  width: 100%; 
+  height: 400px; 
+  background: #000; 
+  text-align: center; 
+  padding-top: 70px; 
+  margin: 0; 
+}
+
+.about-supporting h1 {
+  font-size: 30px; 
+  font-weight: 900; 
+  color: #FFF; 
+  padding: 20px; 
+}
+
+.about-supporting p {
+  font-size: 15px; 
+  font-weight: 300; 
+  color: #FFF; 
+  padding-bottom: 20px; 
+}
+

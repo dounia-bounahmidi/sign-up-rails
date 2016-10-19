@@ -16,7 +16,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $(".main img").click(function() {
+  $(".menu").click(function() {
     $(".side-menu").fadeIn("fast"); 
     $(".side-menu").animate({"margin-left": "0"}, 500); 
   }); 
