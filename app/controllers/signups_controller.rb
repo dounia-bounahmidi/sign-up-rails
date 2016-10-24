@@ -7,12 +7,16 @@ class SignupsController < ApplicationController
   def create 
     @signup = Signup.new(signup_params)
     if @signup.save 
+      SignupMailer.welcome_email.deliver_now
       redirect_to "/thanks"
-      SignupMailer.welcome_email(@signup).deliver_now
     else 
       render 'new'
     end 
   end 
+  
+  def thanks
+		@signup = Signup.last
+	end
   
   private 
   def signup_params 
