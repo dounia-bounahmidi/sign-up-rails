@@ -8,6 +8,7 @@ class SignupsController < ApplicationController
     @signup = Signup.new(signup_params)
     if @signup.save 
       redirect_to "/thanks"
+      SignupMailer.welcome_email(@signup).deliver_now
     else 
       render 'new'
     end 
